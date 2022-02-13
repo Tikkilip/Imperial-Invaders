@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Imperial Invaders</title>
+    <link rel="stylesheet" href="./reset.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" href="favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon.png" />
+    <script src="./index.js" defer></script>
+  </head>
+  <body>
+    <p class="scoreBoard">
+      <span>Score:</span>
+      <span id="scoreElement">0</span>
+    </p>
+    <div class="controls_mobile">
+      <button class="controls_btn" id="left_btn"><=</button>
+      <button class="controls_btn" id="shooot_btn">Shoot</button>
+      <button class="controls_btn" id="right_btn">=></button>
+    </div>
+    <div id="start_menu">
+      <p class="menu_text">
+        Имперские штурмовики наступают, пилот!<br />
+        Их следующая цель - планета Набу.<br />
+        Перемещайтесь с помощью клавиш "A" и "D", стреляйте с помощью "SPACE"<br />
+        (сенсорные кнопки на мобильных устройствах и планшетах)...<br />
+        ...<b>и да прибудет с вами сила!</b>
+      </p>
+      <button id="start_btn" class="button">START</button>
+    </div>
+    <div id="game-over_menu">
+      <p class="menu_text" id="final_score"></p>
+      <button id="play-again_btn" class="button">PLAY AGAIN</button>
+    </div>
+    <audio id="music" src="./sounds/main_theme.mp3" loop="loop"></audio>
+    <audio id="tie_shoot" src="./sounds/tie-shoot.mp3"></audio>
+    <audio id="x-wing_shoot" src="./sounds/x-wing-shoot.mp3"></audio>
+    <audio id="x-wing_explode" src="./sounds/x-wing-explode.mp3"></audio>
+    <canvas></canvas>
+  </body>
+</html>
